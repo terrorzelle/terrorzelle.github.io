@@ -5,6 +5,11 @@ layout: default
 {{ content }}
 </div>
 
+<div id="previous-next">
+  <a href="{{ paginator.previous_page_path }}">zurück</a>
+  <a href="{{ paginator.next_page_path }}">vor</a>
+</div>
+
 <div id="comments">
 {{ comment.content | markdownify }}
 </div>
