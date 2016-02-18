@@ -4,3 +4,7 @@ layout: default
 <div id="post">
 {{ content }}
 </div>
+
+<div id="comments">
+{{ comment.content | markdownify }}
+</div>
